@@ -1,0 +1,22 @@
+﻿=== FLUJO CAG COMPLETO (sin servidor) ===
+
+1. Contexto nuevo usuario: [{'key': 'audience', 'value': 'estudiantes'}, {'key': 'preferred_style', 'value': 'detallado'}]
+2. Guardado audience=estudiantes
+3. Contexto actual: [{'key': 'audience', 'value': 'estudiantes'}, {'key': 'preferred_style', 'value': 'detallado'}]
+4. Pregunta con audience:
+   Respuesta: Para estudiantes: Segun la base de conocimiento del curso: CAG usa contexto persistente, como preferencias, historial y decisiones del usuario, para m...
+   Contextos usados: ['audience', 'preferred_style']
+
+5. Guardado preferred_style=detallado
+   Contexto actual: [{'key': 'audience', 'value': 'estudiantes'}, {'key': 'preferred_style', 'value': 'detallado'}]
+6. Pregunta con ambos contextos:
+   Respuesta: Para estudiantes: Segun la base de conocimiento del curso: CAG usa contexto persistente, como preferencias, historial y decisiones del usuario, para mejorar respuestas futuras. El curso usa SDD para disenar antes de construir, BDD para expresar compo...
+   Contextos usados: ['audience', 'preferred_style']
+
+=== VERIFICACION ===
+Resp1 personalizada (estudiantes): SI
+Resp2 personalizada (estudiantes): SI
+Resp1 usa contexto: SI
+Resp2 usa ambos contextos: SI
+
+Resultado: TODO OK

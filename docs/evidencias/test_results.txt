@@ -1,0 +1,20 @@
+﻿=== RESULTADOS DE VALIDACIÓN FINAL ===
+Proyecto: Context-Augmented Generation (CAG) + SQLite
+Fecha: 2026-06-12
+
+test_ask_answers_from_knowledge_base (base.test_base_api.BaseApiTest) ... ok
+test_ask_requires_user_and_question (base.test_base_api.BaseApiTest) ... ok
+test_health_returns_ok (base.test_base_api.BaseApiTest) ... ok
+test_ask_with_multiple_context_items (test_cag_own.CagOwnTest) ... ok
+test_ask_without_context_returns_normal_answer (test_cag_own.CagOwnTest) ... ok
+test_context_empty_for_new_user (test_cag_own.CagOwnTest) ... ok
+test_multiple_users_context_isolated (test_cag_own.CagOwnTest) ... ok
+test_save_overwrites_existing_key (test_cag_own.CagOwnTest) ... ok
+test_unknown_context_key_does_not_break (test_cag_own.CagOwnTest) ... ok
+test_ask_uses_context_to_influence_later_response (validation.test_cag_contract.CagContractTest) ... ok
+test_retrieves_context_for_user (validation.test_cag_contract.CagContractTest) ... ok
+test_saves_context_for_user (validation.test_cag_contract.CagContractTest) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.672s
+OK
